@@ -19,5 +19,6 @@ Run the container:
 docker run -d --name xboxdns \
   --restart unless-stopped \
   -p 53:53/udp -p 53:53/tcp \
+  -p 443:443 \
   xboxdns
 ```
